@@ -1,0 +1,66 @@
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+
+.left {
+	float: left;
+}
+
+.right {
+	float: right;
+}
+.cls {
+	clear: both;
+}
+
+.clearfix:before, .clearfix:after { content: ""; display: table; }
+.clearfix:after { clear: both; }
+.clearfix { *zoom: 1; }
+
+
+.color1{
+	background: grey;
+}
+.color2 {
+	background: peru;
+}
+
+.color3{
+	background: lightblue;
+}
+.color4{
+	background: red ;
+}
+
+
+#header {
+	
+}
+#sidebar {
+	width: 300px;
+}
+
+#section {
+	width: 660px;
+}
+
+#footer {
+	
+}
+
+
+.container {
+	width: 960px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+
+#header .container {
+	height: 60px;
+	background: red;
+}
