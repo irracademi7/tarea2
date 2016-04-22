@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Box model</title>
+	<link rel="stylesheet" href="css/normalize.css">
+	
+	<style>
+		.box {
+			background: yellow;
+			width: 100px;
+			height: 100px;
+			margin: 10px;
+			padding: 5px;
+		}
+
+		.left {
+			float: left;
+		}
+
+		.right {
+			float: right;
+		}
+		.cls {
+			clear: both;
+		}
+
+		.clearfix:before, .clearfix:after { content: ""; display: table; }
+		.clearfix:after { clear: both; }
+		.clearfix { *zoom: 1; }
+
+	</style>
+	
+</head>
+<body>
+	<h1>Float</h1>
+	<h2>Con clase .cls</h2>
+	
+	<div class="box left">Caja1</div>
+	<div class="box left">Caja2</div>
+	<div class="cls"></div>
+	<div class="box">Caja3</div>
+	<h2>Con clearfix</h2>
+	<div class="clearfix">
+		<div class="box left">Caja1</div>
+		<div class="box left">Caja2</div>
+	</div>
+	<div class="box">Caja3</div>
+</body>
+</html>

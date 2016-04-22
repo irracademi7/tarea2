@@ -5,22 +5,83 @@
 	<title>Layout 1</title>
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/style.css">
+	<style>
+		.box {
+			background: yellow;
+			width: 100px;
+			height: 100px;
+			margin: 10px;
+			padding: 5px;
+		}
+
+		.left {
+			float: left;
+		}
+
+		.right {
+			float: right;
+		}
+		.cls {
+			clear: both;
+		}
+
+		.clearfix:before, .clearfix:after { content: ""; display: table; }
+		.clearfix:after { clear: both; }
+		.clearfix { *zoom: 1; }
+
+	</style>
 </head>
 <body>
-
 <div id="header" class="">
 	<div class="container color2">Curriculum Vitae</div>
-	<div class="container"> <img src="img/img.jpg"></div>
+	<div class="container" > <img src="img/img.jpg"></div>
 	<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 </div>
 <div class="clearfix">
 	<div class="container">
-		<div id="sidebar" class="left color3">sidebar</div>
-		<div id="section" class="left color2">section</div>
-	</div>
+		<b><div id="sidebar" class="left color3">I Antecedentes Personales</div></b>
+		<div id="sidebar" class="left color3">Nombre: Isui Rojas</div>
+		<div id="sidebar" class="left color3">RUT: 12312312-3</div>
+		<div id="sidebar" class="left color3">Edad: 21</div>
+		<div id="sidebar" class="left color3">Domicilio: Chile</div>
+		<div id="sidebar" class="left color3">Nacionalidad: Chilena</div>
+		<br>
+		<b><div id="sidebar" class="left color3">II Antecedentes Academicos</div></b>
+		<div id="sidebar" class="left color3">PSU: Rendida 2012</div>
+		<div id="sidebar" class="left color3">Estudios Superiores: UNAB</div>
+		<div id="sidebar" class="left color3">Carrera: Ing en Computación e Informática</div>
+		<br>
+		<b><div id="sidebar" class="left color3">III Conocimientos Computacionales</div></b>
+		<div id="sidebar" class="left color3">Programación Orientada a Objetos</div>
+		<div id="sidebar" class="left color3">Redes de Computación</div>
+		<br>
+		<b><div id="sidebar" class="left color3">IV Anteedentes Laborales</div></b>
+		<div id="sidebar" class="left color3">Profesor Laboratorio: UNAB</div>
+		<div id="sidebar" class="left color3">Clases de Programacion</div>
+		<div id="sidebar" class="left color3">Trabajo independiente servicio tecnico</div>
+		<div id="sidebar" class="left color3">Armado omputadores, mantencion, configuracion de redes</div>
+		<b><div id="sidebar" class="left color3">Referencias</div></b>
+		<div id="sidebar" class="left color3">Eduardo Quiroga</div>
+		<div id="sidebar" class="left color3">Su_correo@correo.cl</div>
+		<div id="sidebar" class="left color3">José Souza</div
+		>
+		<div id="sidebar" class="left color3">jose_correo@sucorreo.cl</div>
+
+
+
+		<div id="section" class="left color2">sidebar</div>
+		<div class="box left" id="section">Caja1</div>
+		<div class="box left" id="section">Caja2</div>
+		<div class="cls" id="section"></div>
+		<div class="box left" id="sidebar">Caja3</div>
+		<div class="cls" id="section"></div>
+		<div class="box left" id="section">Caja4</div>
+		</div>
 </div>
 <div id="footer" class="">
-	<div class="container color1">footer</div>
+	<center>
+	<div class="container color1">Disponibilidad Inmediata</div>
+	</center>
 </div>	
 </body>
 </html>
